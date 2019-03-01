@@ -33,17 +33,8 @@ fname = input("Enter file name: ")
 if len(fname) < 1:
     fname = "roster_data.json"
 
-# [
-#   [
-#     "Katarzyna",
-#     "si110",
-#     1
-#   ],
-#   [
-#     "Azlan",
-#     "si110",
-#     0
-#   ],
+# [["Katarzyna", "si110", 1],
+#  ["Azlan", "si110", 0],
 
 str_data = open(fname).read()
 json_data = json.loads(str_data)
